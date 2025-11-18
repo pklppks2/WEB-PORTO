@@ -3,14 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofil</title>
+    <title>Portfolio PKL PPKS TI</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome untuk icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <h1>PORTOFOLIO PKL PPKS TI</h1>
-    <h2>Mentor : Arfandi Nasution</h2>
-    <button><a href="adiyatFile/adiyat.html">Adiyat</a></button>
-    <button><a href="elzaFile/elza.html">Elza</a></button>
-    <button><a href="mosesFile/fortofolio.html">Moses</a></button>
+    <!-- Background Animation -->
+    <div class="background-animation">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Header dengan animasi -->
+        <header class="fade-in">
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <span>PPKS TI</span>
+            </div>
+            <div class="header-text">
+                <h1 class="typing-animation">PORTFOLIO PKL PPKS TI</h1>
+                <div class="underline"></div>
+            </div>
+        </header>
+
+        <!-- Mentor Section -->
+        <section class="mentor-section slide-in-left">
+            <div class="mentor-card">
+                <div class="mentor-icon">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <div class="mentor-info">
+                    <h2>Mentor Kami</h2>
+                    <h3>Arfandi Nasution</h3>
+                    <p>Professional Web Developer & Instructor</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Students Portfolio -->
+        <section class="students-section">
+            <h2 class="section-title bounce-in">Tim PKL Kami</h2>
+            <div class="students-grid">
+                <div class="student-card flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="student-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <h3>Adiyat</h3>
+                            <p>Web Developer</p>
+                            <div class="skills">
+                                <span>Laravel</span>
+                                <span>Bootstrap</span>
+                                <span>MYSQL</span>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Adiyat Ferdianata</h3>
+                            <p>Fullstack Web Dev</p>
+                            <button class="profile-btn">
+                                <a href="adiyatFile/adiyat.html">Lihat Portfolio</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="student-card flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="student-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <h3>Elza</h3>
+                            <p>Web Designer</p>
+                            <div class="skills">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Elza</h3>
+                            <p>Frontend Web</p>
+                            <button class="profile-btn">
+                                <a href="elzaFile/elza.html">Lihat Portfolio</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="student-card flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="student-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <h3>Moses</h3>
+                            <p>UI / UX</p>
+                            <div class="skills">
+                                <span>Figma</span>
+                                <span>Canva</span>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Moses</h3>
+                            <p>User Interface Design</p>
+                            <button class="profile-btn">
+                                <a href="mosesFile/fortofolio.html">Lihat Portfolio</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="stats-container">
+                <div class="stat-item count-up">
+                    <i class="fas fa-code"></i>
+                    <h3 data-count="1500">0</h3>
+                    <p>Lines of Code</p>
+                </div>
+                <div class="stat-item count-up">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3 data-count="15">0</h3>
+                    <p>Projects</p>
+                </div>
+                <div class="stat-item count-up">
+                    <i class="fas fa-clock"></i>
+                    <h3 data-count="240">0</h3>
+                    <p>Hours Learned</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="fade-in-up">
+            <div class="footer-content">
+                <p>&copy; 2024 PKL PPKS TI. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Floating Action Button -->
+    <div class="fab">
+        <i class="fas fa-rocket"></i>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
