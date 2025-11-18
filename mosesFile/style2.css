@@ -214,26 +214,4 @@ footer {
     background: #26292d;
     color: #ccc;
 }
-/* RESPONSIVE */
-@media (max-width: 900px) {
-    .home {
-        flex-direction: column;
-        text-align: center;
-    }
-}
 
-@media (max-width: 600px) {
-    .navbar {
-        padding: 16px 5%;
-    }
-    .nav_2 {
-        gap: 15px;
-    }
-    .home-info h1 {
-        font-size: 35px;
-    }
-    .skill h1,
-    .about-me h1 {
-        font-size: 32px;
-    }
-}
