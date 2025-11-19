@@ -3,128 +3,239 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elza Fikri Dinata | Portfolio</title>
+    <meta name="description" content="Portfolio of Elza Fikri Dinata - Junior Front End Developer">
+    <meta name="keywords" content="Front End Developer, HTML, CSS, JavaScript, Portfolio">
+    <title>Elza Fikri Dinata | Front End Developer</title>
     <link rel="stylesheet" href="elza.css">
-    <link href="https://fonts.googleapis.com/css2?
-    family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
 
     <!-- NAVBAR -->
     <nav class="navbar">
-        <div class="logo">ElzaFikri</div>
-        <ul class="nav-links">
-            <li><a  href="#home">Home</a></li>
-            <li><a  href="#about">About</a></li>
-            <li><a href="#skill">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="nav-container">
+            <div class="logo">ElzaFikri</div>
+            <div class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skill" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- HERO -->
     <section class="hero" id="home">
-        <div class="hero-text">
-            <h3>Hello Everyone, I'm</h3>
-            <h1>Elza Fikri Dinata</h1>
-            <p class="tagline">Junior Front End Developer</p>
+        <div class="hero-container">
+            <div class="hero-text">
+                <h3>Hello Everyone, I'm</h3>
+                <h1>Elza Fikri Dinata</h1>
+                <p class="tagline">Junior Front End Developer</p>
+                <p class="hero-desc">Passionate about creating beautiful, responsive, and user-friendly web experiences</p>
 
-            <div class="social-icons">
-                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/324/324123.png"></a>
-                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/724/724664.png"></a>
-                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png"></a>
-                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3536/3536445.png"></a>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="#about" class="btn">Explore More</a>
+                    <a href="#contact" class="btn btn-outline">Hire Me</a>
+                </div>
             </div>
 
-            <a href="#about" class="btn">Explore More</a>
+            <div class="hero-img">
+                <div class="img-container">
+                    <img src="img_elza/profil.jpeg" alt="Foto Elza Fikri Dinata">
+                </div>
+            </div>
         </div>
-
-        <div class="hero-img">
-            <img src="img_elza/profil.jpeg" alt="Foto Elza">
+        
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
     <!-- ABOUT SECTION -->
-<section id="about" class="about">
-    <div class="about-container">
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-container">
+                <div class="about-img">
+                    <div class="img-frame">
+                        <img src="img_elza/profil.jpeg" alt="Elza Fikri Dinata">
+                    </div>
+                </div>
 
-        <div class="about-img">
-            <img src="img_elza/profil.jpeg" alt="Elza">
-        </div>
+                <div class="about-text">
+                    <h3>Hi! I'm <span class="highlight">Elza Fikri Dinata</span></h3>
+                    <p>
+                        A passionate Junior Frontend Developer with a strong foundation in modern web technologies. 
+                        I specialize in creating responsive, user-friendly interfaces that provide excellent user experiences.
+                    </p>
 
-        <div class="about-text">
-            <h2>About Me</h2>
-            <p>
-                Hi! I'm <b>Elza Fikri Dinata</b>, a Junior Frontend Developer
-            </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <strong>Email:</strong>
+                            <span>elzadinata360@gmail.com</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Phone:</strong>
+                            <span>+62831-4396-6689</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Location:</strong>
+                            <span>Medan, Indonesia</span>
+                        </div>
+                    </div>
 
-            <p>
-                I have experience with HTML, CSS, JavaScript, and enjoy creating 
-                interactive designs. My goal is to keep growing as a developer 
-                and work on exciting real-world projects.
-            </p>
-
-            <a href="#contact" class="btn about-btn">Contact Me</a>
-        </div>
-
-    </div>
-</section>
-
-<!-- SKILLS SECTION -->
-<section id="skill" class="skills">
-    <h2 class="skills-title">My Skills</h2>
-
-    <div class="skills-container">
-
-        <div class="skill-box">
-            <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML">
-            <p>HTML</p>
-        </div>
-
-        <div class="skill-box">
-            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS">
-            <p>CSS</p>
-        </div>
-
-        <div class="skill-box">
-            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript">
-            <p>JavaScript</p>
-        </div>
-
-    </div>
-</section>
-
-<!-- CONTACT SECTION -->
-<section id="contact" class="contact">
-    <h2 class="contact-title">Contact Me</h2>
-
-    <div class="contact-container">
-
-        <div class="contact-info">
-            <div class="contact-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="">
-                <p>+62831-4396-6689</p>
+                    <a href="#contact" class="btn about-btn">Contact Me</a>
+                </div>
             </div>
-
-            <div class="contact-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/126/126341.png" alt="">
-                <p>Medan.Delitua,Perumahan DeliKencana Blok F-09, (Indonesia)</p>
-            </div>
-
-            <div class="contact-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Gmail">
-                <p>elzadinata360@gmail.com</p>
-            </div>
-
         </div>
+    </section>
 
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Email Address" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
+    <!-- SKILLS SECTION -->
+    <section id="skill" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <p class="section-subtitle">Technologies I work with</p>
 
-    </div>
-</section>
+            <div class="skills-container">
+                <div class="skill-box">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <p>Semantic markup, accessibility, and modern HTML features</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    <p>Flexbox, Grid, animations, and responsive design</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <div class="skill-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>ES6+, DOM manipulation, and interactive features</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="75"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <p class="section-subtitle">Get in touch for collaborations or opportunities</p>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+62831-4396-6689</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Address</h3>
+                            <p>Medan.Delitua, Perumahan DeliKencana Blok F-09, Indonesia</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>elzadinata360@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <span class="error-msg" id="nameError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email Address" required>
+                        <span class="error-msg" id="emailError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                        <span class="error-msg" id="messageError"></span>
+                    </div>
+                    
+                    <button type="submit" class="btn form-btn">
+                        <span class="btn-text">Send Message</span>
+                        <div class="btn-loader"></div>
+                    </button>
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2023 Elza Fikri Dinata. All Rights Reserved.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="elza.js"></script>
 </body>
 </html>
